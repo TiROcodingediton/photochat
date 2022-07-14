@@ -1,0 +1,470 @@
+/**
+ * @name Photochat discord
+ * @author TiRO
+ * @version 1.1
+ * @description Emulates the look of the chatting program (photochat) in cole's/swift-kick's home-skillet
+*/
+
+/* variables */
+.theme-light, .theme-dark {
+    --header-primary: rgb(15, 15, 15);
+    --background-primary: transparent;
+    --channels-default: rgb(31, 31, 31);
+    --channel-icon: rgb(31, 31, 31);
+    --interactive-normal: rgb(78, 78, 78);
+    --interactive-hover: rgb(49, 49, 49);
+    --interactive-active: black;
+    --interactive-muted: rgba(126, 125, 125, 0.829);
+
+    --background-p: #0091ef;
+    --background-p-s: #00b7ff;
+    --border-p: blue;
+
+    --background-1: rgb(63, 81, 184);
+    --background-2: rgb(24, 19, 99);
+
+    --avatarframe: linear-gradient(45deg,blue,cyan) 4;
+}
+
+.theme-light {
+    --header-secondary: white;
+    --text-normal: black;
+    --text-muted: rgb(59, 59, 59);
+
+    --m-background-p: #ecfaff;
+    --m-background-s: #00bbff;
+    --m-background-t: rgb(255, 255, 255);
+}
+
+.theme-dark {
+    --header-secondary: white;
+    --text-normal: rgb(255, 255, 255);
+    --text-muted: rgb(59, 59, 59);
+
+    --m-background-p: #181818;
+    --m-background-s: #7e8385;
+    --m-background-t: rgb(0, 0, 0);
+}
+/* uhh */
+.wordmarkWindows-2dq6rw {
+    content: 'ass';
+}
+/* home-slider */
+.homeIcon-r0w4ny {
+    display: none;
+}
+.childWrapper-1j_1ub {
+    background-image: url(https://file.garden/Ye_riHdZSwaxna6j/css%20themes/photocord/images/photochat.png);
+    background-color: transparent !important;
+    background-size: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 7px !important;
+}
+.pill-L_aLMQ>.item-2LIpTv {
+    color: red !important;
+}
+.wrapper-38slSD {
+    padding:  5px 2px;
+}
+.wrapper-38slSD>.expandedFolderBackground-1kSAf6 {
+    background-color: white;
+    box-shadow: inset 0 -50px 50px white,
+    inset 0 5px 5px white,
+    inset 5px 0 5px #b3b3b3,
+    inset -5px -5px 5px #b3b3b3;
+    border: solid 3px grey;
+    border-radius: 4px;
+    left: 9px;
+    bottom: 5px;
+    width: 52px;
+}
+.scroller-3X7KbA {
+    background-color: transparent;
+}
+
+/* main */
+.bg-1QIAus {
+    background-image: linear-gradient(180deg,var(--background-1),var(--background-2));
+}
+.title-17SveM {
+    color: white;
+    font-size: 22px;
+    overflow: visible;
+}
+.children-3xh0VB {
+    height: 50px;
+}
+.layers-OrUESM {
+    background-color: transparent;
+}
+.container-1eFtFS, .base-2jDfDU{
+    background-color: transparent;
+}
+
+/* chat area */
+.chat-2ZfjoI {
+    background-image: url(https://file.garden/Ye_riHdZSwaxna6j/css%20themes/photocord/images/film%20a.png);
+    background-repeat: space;
+    background-position: -120px -70px;
+    background-size: 1200px;
+    background-color: var(--background-p);
+    box-shadow: inset 0 25px 25px var(--background-p-s);
+    border: solid var(--border-p) 2px;
+    border-radius: 8px;
+    margin: 5px;
+}
+.title-31SJ6t {
+    background-color: transparent;
+}
+.form-3gdLxP:before, .content-1jQy2l:before {
+    visibility: hidden;
+}
+.messagesWrapper-RpOMA3 {
+    background-color: var(--m-background-p);
+    box-shadow: inset 0 -700px 700px var(--m-background-t),
+    inset 0 10px 5px white,
+    inset 16px 0 16px var(--m-background-s),
+    inset -16px 0 16px var(--m-background-s);
+    margin: 5px 12px 15px 15px;
+    border: solid #7cdbff;
+    border-image: linear-gradient(to right, 
+    #006692,
+    #7cdbff 2%,
+    #7cdbff 98%,
+    #006692) 3;
+}
+.scroller-kQBbkU {
+    color: transparent;
+    background-color: transparent;
+}
+.scrollerContent-2SW0kQ {
+    margin: 0 16px;
+}
+/* message area */
+.channelTextArea-1FufC0 {
+    border: 2px solid #7cdbff;
+    box-shadow: inset 0 -34px 5px var(--m-background-p),
+    inset 0 3px 2px white;
+    background-color: var(--m-background-p);
+    border-radius: 0px;
+    border-image: linear-gradient(to right, 
+    #006692,
+    #7cdbff 2%,
+    #7cdbff 98%,
+    #006692) 3;
+}
+.scrollableContainer-15eg7h {
+    background-color: transparent;
+}
+.inner-NQg18Y {
+    background-color: transparent;
+}
+
+/* Sidebar */
+.listItem-3SmSlK>div>.blobContainer-ikKyFs>.wrapper-28eC3z>.svg-2zuE5p>mask {
+   display: none !important;
+}
+.tutorialContainer-1pL9QS>.listItem-3SmSlK>.listItemWrapper-3d87LP>.wrapper-28eC3z>svg>mask{
+    display: none !important;
+}
+.wrapper-3kah-n.selected-1Drb7Z {
+    transition: none !important;
+    background-color: transparent !important;
+}
+.tutorialContainer-1pL9QS>.listItem-3SmSlK>.listItemWrapper-3d87LP>.wrapper-28eC3z>.svg-2zuE5p{
+    background-size: 5px;
+}
+.tree-3agP2X, scrollerBase-_bVAAt, .wrapper-1_HaEi {
+    background-color: transparent;
+}
+.headerContent-2SNbie {
+    color: white;
+}
+.scroller-1ox3I2 {
+    padding-left: 8px !important;
+}
+.icon-2W8DHg {
+    shape-rendering: geometricPrecision;
+}
+.content-1gYQeQ {
+    padding: 0;
+    margin-left: 0;
+    border-radius: 0;
+}
+.content-1gYQeQ>.mainContent-20q_Hp {
+    margin-left: 5px;
+}
+.wrapper-1S43wv, .name-3BUDLf {
+    color: white;
+}
+.userAvatar-3Hwf1F {
+    border-radius: 2px;
+    border: solid 2px;
+    border-image: var(--avatarframe);
+}
+.sidebar-1tnWFu {
+    background-color: var(--background-p);
+    box-shadow: inset 0 25px 25px var(--background-p-s);
+    border: solid 2px var(--border-p);
+    border-radius: 8px !important;
+    margin: 5px;
+}
+.container-1NXEtd, privateChannels-oVe7HL {
+    border: solid #4d4d4db9;
+    border-radius:5px;
+    background-color: #24061b85;
+    box-shadow: inset 0 5px 4px white, 
+    inset 0 500px 500px rgba(52, 49, 78, 0.425);
+    margin: 6px;
+}
+.privateChannels-oVe7HL, .scroller-WSmht3 {
+    background-color: transparent;
+}
+.content-66wMin {
+    height: 36px;
+    width: 146px;
+    background-color: white;
+    border: solid grey 2px;
+    border-radius: 2px;
+    box-shadow: inset 0 3px 5px white,
+    inset 0 20px 20px #b3b3b3;
+}
+.name-2m3Cms {
+    margin: auto;
+}
+.panels-3wFtMD {
+    background-color: transparent;
+    border-radius: 8px;
+    margin: 6px;
+}
+.containerDefault-3TQ5YN {
+    padding: 5px;
+    border-radius: 2px;
+    margin: 5px;
+}
+.containerDefault-YUSmu3 {
+    background-color: white;
+    border-radius: 0;
+    font-family: calibri;
+    text-rendering: geometricPrecision;
+    margin: 0 !important;
+}
+.nameTag-sc-gpq {
+    background-color: #f1ffff;
+    box-shadow: inset 3px 5px 5px #c5eafc;
+    border: solid 0px transparent;
+    border-radius: 6px;
+    padding: 3px;
+}
+/* sidebar - right */
+.container-2o3qEW,.members-3WRCEx,.members-3WRCEx>div {
+    background-color: transparent;
+}
+.members-3WRCEx {
+    border: solid #4d4d4db9;
+    border-radius:5px;
+    background-color: #24061b85;
+    box-shadow: inset 0 5px 4px white, 
+    inset 0 500px 500px rgba(52, 49, 78, 0.425);
+    margin: 6px;
+}
+.content-1U25dZ {
+    background-color: white;
+    border: solid grey 2px;
+    border-radius: 2px;
+    box-shadow: inset 0 3px 5px white,
+    inset 0 20px 20px #b3b3b3;
+    height: 36px;
+}
+.nameAndDecorators-3ERwy2 > .name-3Vmqxm {
+    margin: auto;
+}
+.body-2wLx-E {
+    margin: 16px;
+    border: solid #4d4d4db9;
+    border-radius:5px;
+    background-color: #24061b85;
+    box-shadow: inset 0 5px 4px white, 
+    inset 0 500px 500px rgba(52, 49, 78, 0.425);
+}
+.bodyInnerWrapper-2bQs1k {
+    background-color: transparent;
+}
+.footer-3naVBw {
+    background-color: transparent;
+}
+.footer-3naVBw>.inputWrapper-1YNMmM {
+    border: solid 2px;
+    background-color: white;
+    border-radius: 0px;
+    border-image: linear-gradient(to right, 
+    #006692,
+    #7cdbff 2%,
+    #7cdbff 98%,
+    #006692) 3;
+}
+.footer-3naVBw>.inputWrapper-1YNMmM>.input-2g-os5 {
+    background-color: white;
+}
+.note-Go5ZP2 {
+    color: black;
+    background-color: white;
+    border: solid 3px #24061b85;
+    border-radius: 3px;
+    box-shadow: inset 0 3px 5px white,
+    inset 0 20px 20px #b3b3b3;
+    margin: 2px;
+}
+.eyebrow-Ejf06y {
+    color: white !important;
+}
+/* avatars */
+mask[id*="svg-mask-avatar-"] circle[r="0.5"] {
+    r: 1 !important;
+	/*masked avatar image mask (radius removed)*/
+}
+svg.mask-1FEkla.svg-2azL_l > mask[height="32"][width="32"]:first-child circle {
+    r: 38;
+}
+svg.mask-1FEkla.svg-2azL_l > mask[height="32"][width="32"]:first-child rect {
+    visibility: hidden;
+}
+svg.mask-1FEkla.svg-2azL_l > mask[height="32"][width="32"]:first-child rect[x="19"] {
+    x: 19.5;
+}
+svg.mask-1FEkla.svg-2azL_l > mask[height="32"][width="32"]:first-child rect[x="11.5"] {
+    x: 12;
+}
+svg.svg-2zuE5p > mask[height="32"][width="32"]:first-child rect {
+    rx: 2;
+    ry: 2;
+}
+.avatar-2e8lTP, .avatar-6qzftW, .avatarHoverTarget-1zzfRL, .layout-1LjVue>.avatar-1HDIsL, .avatar-2Vndt_ , .avatar-1EWyVD.wrapper-1VLyxH , .listItem-3SmSlK>div>.blobContainer-ikKyFs>.wrapper-28eC3z>.svg-2zuE5p {
+    border-radius: 2px !important;
+    background-color: white;
+    box-shadow: inset 0 14px 14px gainsboro;
+    border: solid 2px;
+    border-image: var(--avatarframe);
+}
+.wrapper-28eC3z {
+    border-radius: 2px !important;
+}
+.icon-1zKOXL {
+    border-radius: 2px;
+}
+.avatarSpeaking-33RRJU {
+    border-radius: 2px;
+}
+.avatarHint-k7pYop {
+    left: 4px; top: 4px; /* if you think this a toothpick selution let me see you fix it a diffrent way */
+}
+svg.avatarHint-k7pYop {
+    rx: 8px;
+    ry: 8px;
+}
+/*.iconWrapper-2awDjA {
+    display: none;
+}*/
+.title-17SveM {
+    padding: 0 0 0 12px;
+}
+.title-338goq, .subtext-2HDqJ7 {
+    color: black;
+}
+.button-12Fmur, .iconWrapper-2awDjA {
+    color: white !important;
+}
+.userPopout-2j1gM4 {
+    border: solid var(--border-p) 2px;
+    background-color: var(--background-p);
+    background-image: url(https://file.garden/Ye_riHdZSwaxna6j/css%20themes/photocord/images/film%20b.png);
+    background-size: 800px;
+    background-position: -200px 150px;
+    background-repeat: space;
+    box-shadow: inset 0 80px 20px var(--background-p-s);
+}
+.root-8LYsGj {
+    border: solid var(--border-p) 2px;
+    background-color: var(--background-p);
+    background-image: url(https://file.garden/Ye_riHdZSwaxna6j/css%20themes/photocord/images/film%20b.png);
+    background-size: 800px;
+    background-repeat: space;
+    background-position: -100px 120px;
+    padding-bottom: 22px;
+    box-shadow: inset 0 135px 15px var(--background-p-s) !important;
+}
+.root-8LYsGj>.topSection-13QKHs {
+    background-color: transparent;
+}
+.root-8LYsGj>.body-1Ukv50 {
+    background-color: transparent;
+}
+.root-8LYsGj>.body-1Ukv50>.infoScroller-1QMpon {
+    border: solid #4d4d4db9;
+    border-radius:5px;
+    background-color: #24061b85 !important;
+    box-shadow: inset 0 5px 4px white, 
+    inset 0 500px 500px rgba(52, 49, 78, 0.425);
+    margin: 32px 16px 16px 16px;
+    bottom: 30px;
+    background-color: white;
+}
+.tabBarItem-30Te4-{
+    color: white !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+.userInfoSection-2u2hir>.defaultColor-24IHKz {
+    color: white !important;
+}
+.userInfoText-2MFCmH {
+    color: white;
+}
+.note-3M15gE>.textarea-_59yqs {
+    color: white !important;
+}
+.username-3JLfHz {
+    color: white !important;
+    font-size: 23px;
+    font-weight: 5000;
+}
+.anchor-1MIwyf, .contentImagesUserPopout-Kqai8z, .userInfoBody-1zgAd0 {
+    color: white !important;
+}
+.listRow-2nO1T6>.icon-1zKOXL {
+    border-radius: 2px;
+    border: solid 2px;
+    border-image: var(--avatarframe);
+}
+.listRow-2nO1T6>.listRowContent-PEmSWj {
+    background-color: white;
+    border: solid grey 2px;
+    border-radius: 2px;
+    box-shadow: inset 0 3px 5px white,
+    inset 0 20px 20px #b3b3b3;
+    height: 40px;
+}
+.listRow-2nO1T6>.listRowContent-PEmSWj>.listName-PwbeHL, .listRow-2nO1T6>.listRowContent-PEmSWj>.guildNick-fe8oPN, .listScroller-entkMk>.listRow-2nO1T6>.listName-PwbeHL>.username-3JLfHz {
+    margin: auto;
+    width: fit-content;
+}
+.listScroller-entkMk>.listRow-2nO1T6>.listAvatar-2bU5Uh {
+   border: solid 2px;
+   border-radius: 3px;
+   border-image: var(--avatarframe);
+}
+.listScroller-entkMk>.listRow-2nO1T6>.listName-PwbeHL {
+    background-color: white;
+    border: solid grey 2px;
+    border-radius: 2px;
+    box-shadow: inset 0 3px 5px white,
+    inset 0 20px 20px #b3b3b3;
+    height: 40px;
+    width: 100%;
+}
+.avatar-3QF_VA {
+    border: solid 4px;
+    border-radius: 3px;
+    border-image: var(--avatarframe);
+}
