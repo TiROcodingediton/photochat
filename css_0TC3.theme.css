@@ -9,12 +9,8 @@
 .theme-light, .theme-dark {
     --header-primary: rgb(15, 15, 15);
     --background-primary: transparent;
-    --channels-default: rgb(31, 31, 31);
-    --channel-icon: rgb(31, 31, 31);
-    --interactive-normal: rgb(78, 78, 78);
-    --interactive-hover: rgb(49, 49, 49);
-    --interactive-active: black;
-    --interactive-muted: rgba(126, 125, 125, 0.829);
+    
+    --p-title: white;
 
     --background-p: #0091ef;
     --background-p-s: #00b7ff;
@@ -23,6 +19,9 @@
     --background-1: rgb(63, 81, 184);
     --background-2: rgb(24, 19, 99);
 
+    --m-frame-p: #7cdbff;
+    --m-frame-s: #006692;
+
     --avatarframe: linear-gradient(45deg,blue,cyan) 4;
 }
 
@@ -30,20 +29,51 @@
     --header-secondary: white;
     --text-normal: black;
     --text-muted: rgb(59, 59, 59);
+    --r-name: black;
 
+    --channels-default: rgb(204, 204, 204);
+    --channel-icon: rgb(31, 31, 31);
+
+    --f-channelbg: rgb(255, 255, 255);
+    --f-channels-normal: rgb(20, 20, 20);
+
+    --interactive-normal: rgb(78, 78, 78);
+    --interactive-hover: rgb(49, 49, 49);
+    --interactive-active: black;
+    --interactive-muted: rgba(126, 125, 125, 0.829);
+    
     --m-background-p: #ecfaff;
     --m-background-s: #00bbff;
     --m-background-t: rgb(255, 255, 255);
+    --p-pborder: grey;
+    --p-pshadow: #b3b3b3;
+    --p-pbgc: white;
 }
 
 .theme-dark {
     --header-secondary: white;
     --text-normal: rgb(255, 255, 255);
-    --text-muted: rgb(59, 59, 59);
+    --text-muted: rgb(161, 161, 161);
+    --r-name: white;
 
+    --channels-default: rgb(31, 31, 31);
+    --channel-icon: rgb(31, 31, 31);
+
+    --f-channelbg: black;
+    --f-channels-normal: rgb(228, 228, 228);
+
+    --interactive-normal: rgb(78, 78, 78);
+    --interactive-hover: rgb(168, 168, 168);
+    --interactive-active: rgb(255, 255, 255);
+    --interactive-muted: rgba(126, 125, 125, 0.829);
+    
+    
     --m-background-p: #181818;
-    --m-background-s: #7e8385;
-    --m-background-t: rgb(0, 0, 0);
+    --m-background-s: #ddb393;
+    --m-background-t: rgb(32, 32, 32);
+    --p-pborder: grey;
+    --p-pshadow: #353535;
+    --p-pbgc: black;
 }
 /* uhh */
 .wordmarkWindows-2dq6rw {
@@ -61,19 +91,16 @@
     background-repeat: no-repeat;
     border-radius: 7px !important;
 }
-.pill-L_aLMQ>.item-2LIpTv {
-    color: red !important;
-}
 .wrapper-38slSD {
     padding:  5px 2px;
 }
 .wrapper-38slSD>.expandedFolderBackground-1kSAf6 {
-    background-color: white;
-    box-shadow: inset 0 -50px 50px white,
+    background-color: var(--p-pbgc);
+    box-shadow: inset 0 -50px 50px var(--p-pbgc),
     inset 0 5px 5px white,
-    inset 5px 0 5px #b3b3b3,
-    inset -5px -5px 5px #b3b3b3;
-    border: solid 3px grey;
+    inset 5px 0 5px var(--p-pshadow),
+    inset -5px -5px 5px var(--p-pshadow);
+    border: solid 3px var(--p-pborder);
     border-radius: 4px;
     left: 9px;
     bottom: 5px;
@@ -88,7 +115,7 @@
     background-image: linear-gradient(180deg,var(--background-1),var(--background-2));
 }
 .title-17SveM {
-    color: white;
+    color: var(--p-title);
     font-size: 22px;
     overflow: visible;
 }
@@ -127,12 +154,12 @@
     inset 16px 0 16px var(--m-background-s),
     inset -16px 0 16px var(--m-background-s);
     margin: 5px 12px 15px 15px;
-    border: solid #7cdbff;
+    border: solid var(--m-frame-p);
     border-image: linear-gradient(to right, 
-    #006692,
-    #7cdbff 2%,
-    #7cdbff 98%,
-    #006692) 3;
+    var(--m-frame-s),
+    var(--m-frame-p) 2%,
+    var(--m-frame-p) 98%,
+    var(--m-frame-s)) 3;
 }
 .scroller-kQBbkU {
     color: transparent;
@@ -143,16 +170,16 @@
 }
 /* message area */
 .channelTextArea-1FufC0 {
-    border: 2px solid #7cdbff;
+    border: 2px solid var(--m-frame-p);
     box-shadow: inset 0 -34px 5px var(--m-background-p),
     inset 0 3px 2px white;
     background-color: var(--m-background-p);
     border-radius: 0px;
     border-image: linear-gradient(to right, 
-    #006692,
-    #7cdbff 2%,
-    #7cdbff 98%,
-    #006692) 3;
+    var(--m-frame-s),
+    var(--m-frame-p) 2%,
+    var(--m-frame-p) 98%,
+    var(--m-frame-s)) 3;
 }
 .scrollableContainer-15eg7h {
     background-color: transparent;
@@ -181,11 +208,18 @@
 .headerContent-2SNbie {
     color: white;
 }
+.folder-241Joy {
+    background-color: transparent !important;
+}
 .scroller-1ox3I2 {
     padding-left: 8px !important;
 }
 .icon-2W8DHg {
     shape-rendering: geometricPrecision;
+    color: var(--f-channels-normal);
+}
+.modeSelected-3DmyhH .icon-2W8DHg, .modeSelected-3DmyhH:hover .icon-2W8DHg, .modeUnread-3Cxepe .icon-2W8DHg, .modeUnread-3Cxepe:hover .icon-2W8DHg {
+    color: var(--f-channels-normal);
 }
 .content-1gYQeQ {
     padding: 0;
@@ -194,6 +228,9 @@
 }
 .content-1gYQeQ>.mainContent-20q_Hp {
     margin-left: 5px;
+}
+.name-28HaxV {
+    color: var(--f-channels-normal);
 }
 .wrapper-1S43wv, .name-3BUDLf {
     color: white;
@@ -210,11 +247,11 @@
     border-radius: 8px !important;
     margin: 5px;
 }
-.container-1NXEtd, privateChannels-oVe7HL {
+.container-1NXEtd, .privateChannels-oVe7HL {
     border: solid #4d4d4db9;
     border-radius:5px;
     background-color: #24061b85;
-    box-shadow: inset 0 5px 4px white, 
+    box-shadow: inset 0 5px 4px white,
     inset 0 500px 500px rgba(52, 49, 78, 0.425);
     margin: 6px;
 }
@@ -224,11 +261,12 @@
 .content-66wMin {
     height: 36px;
     width: 146px;
-    background-color: white;
-    border: solid grey 2px;
+    background-color: var(--p-pbgc);
+    color: var(--f-channels-normal);
+    border: solid var(--p-pborder) 2px;
     border-radius: 2px;
     box-shadow: inset 0 3px 5px white,
-    inset 0 20px 20px #b3b3b3;
+    inset 0 20px 20px var(--p-pshadow);
 }
 .name-2m3Cms {
     margin: auto;
@@ -244,7 +282,7 @@
     margin: 5px;
 }
 .containerDefault-YUSmu3 {
-    background-color: white;
+    background-color: var(--f-channelbg);
     border-radius: 0;
     font-family: calibri;
     text-rendering: geometricPrecision;
@@ -270,15 +308,16 @@
     margin: 6px;
 }
 .content-1U25dZ {
-    background-color: white;
-    border: solid grey 2px;
+    background-color: var(--p-pbgc);
+    border: solid var(--p-pborder) 2px;
     border-radius: 2px;
     box-shadow: inset 0 3px 5px white,
-    inset 0 20px 20px #b3b3b3;
+    inset 0 20px 20px var(--p-pshadow);
     height: 36px;
 }
 .nameAndDecorators-3ERwy2 > .name-3Vmqxm {
     margin: auto;
+    color: var(--r-name);
 }
 .body-2wLx-E {
     margin: 16px;
@@ -296,24 +335,24 @@
 }
 .footer-3naVBw>.inputWrapper-1YNMmM {
     border: solid 2px;
-    background-color: white;
+    background-color: var(--p-pbgc);
     border-radius: 0px;
     border-image: linear-gradient(to right, 
-    #006692,
-    #7cdbff 2%,
-    #7cdbff 98%,
-    #006692) 3;
+    var(--m-frame-s),
+    var(--m-frame-p) 2%,
+    var(--m-frame-p) 98%,
+    var(--m-frame-s)) 3;
 }
 .footer-3naVBw>.inputWrapper-1YNMmM>.input-2g-os5 {
-    background-color: white;
+    background-color: var(--p-pbgc);
 }
 .note-Go5ZP2 {
     color: black;
-    background-color: white;
+    background-color: var(--p-pbgc);
     border: solid 3px #24061b85;
     border-radius: 3px;
     box-shadow: inset 0 3px 5px white,
-    inset 0 20px 20px #b3b3b3;
+    inset 0 20px 20px var(--p-pshadow);
     margin: 2px;
 }
 .eyebrow-Ejf06y {
@@ -429,6 +468,10 @@ svg.avatarHint-k7pYop {
     font-size: 23px;
     font-weight: 5000;
 }
+.listName-PwbeHL>.username-3JLfHz {
+    color: var(--r-name) !important;
+    font-size: 14px;
+}
 .anchor-1MIwyf, .contentImagesUserPopout-Kqai8z, .userInfoBody-1zgAd0 {
     color: white !important;
 }
@@ -438,11 +481,11 @@ svg.avatarHint-k7pYop {
     border-image: var(--avatarframe);
 }
 .listRow-2nO1T6>.listRowContent-PEmSWj {
-    background-color: white;
-    border: solid grey 2px;
+    background-color: var(--p-pbgc);
+    border: solid var(--p-pborder) 2px;
     border-radius: 2px;
     box-shadow: inset 0 3px 5px white,
-    inset 0 20px 20px #b3b3b3;
+    inset 0 20px 20px var(--p-pshadow);
     height: 40px;
 }
 .listRow-2nO1T6>.listRowContent-PEmSWj>.listName-PwbeHL, .listRow-2nO1T6>.listRowContent-PEmSWj>.guildNick-fe8oPN, .listScroller-entkMk>.listRow-2nO1T6>.listName-PwbeHL>.username-3JLfHz {
@@ -455,11 +498,11 @@ svg.avatarHint-k7pYop {
    border-image: var(--avatarframe);
 }
 .listScroller-entkMk>.listRow-2nO1T6>.listName-PwbeHL {
-    background-color: white;
-    border: solid grey 2px;
+    background-color: var(--p-pbgc);
+    border: solid var(--p-pborder) 2px;
     border-radius: 2px;
     box-shadow: inset 0 3px 5px white,
-    inset 0 20px 20px #b3b3b3;
+    inset 0 20px 20px var(--p-pshadow);
     height: 40px;
     width: 100%;
 }
